@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-primario: #1A2130;
+    --color-secundario: #83B4FF;
+    --color-terciario: #5A72A0;
+    --color-texto: #EEE9DA;
+    --color-hover: #151a24;
+
+    --fuente: "Poppins", sans-serif;;
+}
+
+.header{
+    padding-top:  2% ;
+    padding-left: 10%;
+}
+
+.logo-macodev{
+    width: 5%;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.programa{
+    display: flex;
+    align-items: start;
+    padding: 2% 10%;
+    justify-content: space-between;
+}
+
+.programa__elementos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.programa__elementos__input{
+    background-color: transparent;
+    width: 577px;
+    height: 335px;
+    font-family: var(--fuente);
+    font-size: 32px;
+    color: var(--color-texto);
+    resize: none;
+    border: none;
+}
+
+.programa__elementos__informacion{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--fuente);
+    font-size: 12px;
+    color: #495057;
+}
+
+.programa__botones{
+    gap: 24px;
+}
+
+.programa__btencriptar{
+    border-radius: 16px;
+    background: var(--color-terciario);
+    padding: 16px 24px;
+    width: 25%;
+    font-size: 16px;
+    border: 2px solid var(--color-terciario);
+    margin-top: 2rem;
+    color: var(--color-texto);
+}
+.programa__btdesencriptar{
+    border-radius: 16px;
+    background: #BDCDD6;
+    padding: 16px 24px;
+    width: 25%;
+    font-size: 16px;
+    border: 2px solid var(--color-terciario);
+    margin-top: 2rem;
+    color: var(--color-primario);
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background-color: var(--color-texto);
+    font-family: var(--fuente);
+    color: #343A40;
+    border-radius: 32px;
+    gap: 2px;
+}
+.resultado__ocultar{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2%;
+    align-items: center
+}
+.imagen-muneco{
+    width: 65%;
+}
+
+.resultado__sub, .resultado__texto{
+    text-align: center;
+}
+
+.resultado__boton{
+    border-radius: 16px;
+    background-color: transparent;
+    padding: 16px 24px;
+    width: 25%;
+    font-size: 16px;
+    border: 2px solid var(--color-terciario);
+    margin-top: 2rem;
+}

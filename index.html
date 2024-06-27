@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="icon" type="image/png" href="/img/DISEÑO PIXEL.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <img class="logo-macodev" src="/imagenes/DISEÑO PIXEL.png">
+    </header>
+    <main class="programa">
+        <section class="programa__elementos">
+            <textarea class="programa__elementos__input">Ingrese el texto aquí</textarea>
+            <div class="programa__elementos__informacion">
+                <img class="icono-exclamacion" src="/imagenes/bi_exclamation-circle-fill.png" alt="icono de exclamacion">
+                <p class="programa__elementos__texto">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="programa__botones">
+                <button class="programa__btencriptar">Encriptar</button>
+                <button onclick="myFunction();" class="programa__btdesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        
+        <div class="resultado">
+            <div class="resultado__ocultar">
+                <img class="imagen-muneco" src="/imagenes/Muneco.png" alt="imagen">
+                <h2 class="resultado__sub">Ningún mensaje fue encontrado</h2>
+            </div>
+            <p class="resultado__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="resultado__boton">Copiar</button>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
