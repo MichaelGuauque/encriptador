@@ -13,26 +13,27 @@
     </header>
     <main class="programa">
         <section class="programa__elementos">
-            <textarea class="programa__elementos__input">Ingrese el texto aquí</textarea>
+            <textarea id="textoUsuario" class="programa__elementos__input" onclick="borrarTexto()"> Ingrese el texto aquí </textarea>
             <div class="programa__elementos__informacion">
                 <img class="icono-exclamacion" src="/imagenes/bi_exclamation-circle-fill.png" alt="icono de exclamacion">
                 <p class="programa__elementos__texto">Solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="programa__botones">
-                <button class="programa__btencriptar">Encriptar</button>
-                <button onclick="myFunction();" class="programa__btdesencriptar">Desencriptar</button>
+                <button onclick="encriptarMensaje();" class="programa__btencriptar">Encriptar</button>
+                <button onclick="desencriptarMensaje();" class="programa__btdesencriptar">Desencriptar</button>
             </div>
         </section>
         
         <div class="resultado">
-            <div class="resultado__ocultar">
+            <div id="ocultarResultado" class="resultado__ocultar">
                 <img class="imagen-muneco" src="/imagenes/Muneco.png" alt="imagen">
                 <h2 class="resultado__sub">Ningún mensaje fue encontrado</h2>
             </div>
-            <p class="resultado__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
-            <button class="resultado__boton">Copiar</button>
+            <p id="mensaje" class="resultado__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="botonCopiar" style="visibility: hidden;" class="resultado__boton" onclick="copiarMensaje();">Copiar</button>
         </div>
     </main>
     <footer></footer>
+    <script src="app.js"></script>
 </body>
 </html>
