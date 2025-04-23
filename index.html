@@ -6,6 +6,16 @@
     <title>Encriptador</title>
     <link rel="icon" type="image/png" href="./img/DISEÑO PIXEL.png">
     <link rel="stylesheet" href="style.css">
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6381379,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
 <body>
     <header class="header">
@@ -14,10 +24,10 @@
     </header>
     <main class="programa">
         <section class="programa__elementos">
-            <textarea id="textoUsuario" class="programa__elementos__input" onclick="borrarTexto()"> Ingrese el texto aquí </textarea>
+            <textarea id="textoUsuario" class="programa__elementos__input" onclick="borrarTexto()"> Ingrese el texto aquí</textarea>
             <div class="programa__elementos__informacion">
                 <img class="icono-exclamacion" src="./imagenes/bi_exclamation-circle-fill.png" alt="icono de exclamacion">
-                <p class="programa__elementos__texto">Solo letras minúsculas y sin acentos.</p>
+                <p class="programa__elementos__texto">Solo sin acentos.</p>
             </div>
             <div class="programa__botones">
                 <button onclick="encriptarMensaje();" class="programa__btencriptar">Encriptar</button>
